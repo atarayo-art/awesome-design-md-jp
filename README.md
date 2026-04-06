@@ -37,6 +37,7 @@ Without these specifications, AI agents produce Japanese UI with broken typograp
 | [SmartHR](https://smarthr.jp/) | HR SaaS | [DESIGN.md](design-md/smarthr/DESIGN.md) | [preview.html](design-md/smarthr/preview.html) |
 | [freee](https://www.freee.co.jp/) | Fintech SaaS | [DESIGN.md](design-md/freee/DESIGN.md) | [preview.html](design-md/freee/preview.html) |
 | [note](https://note.com/) | Media Platform | [DESIGN.md](design-md/note/DESIGN.md) | [preview.html](design-md/note/preview.html) |
+| [Novasell](https://novasell.com/) | AI Agency | [DESIGN.md](design-md/novasell/DESIGN.md) | [preview.html](design-md/novasell/preview.html) |
 | [WIRED.jp](https://wired.jp/) | Tech Media | [DESIGN.md](design-md/wired/DESIGN.md) | [preview.html](design-md/wired/preview.html) |
 
 ### Previews
@@ -49,8 +50,8 @@ Without these specifications, AI agents produce Japanese UI with broken typograp
 </tr>
 <tr>
 <td align="center"><strong>note</strong><br>クールグレー / 明朝体オプション<br><img src="design-md/note/preview-screenshot.png" width="220"></td>
+<td align="center"><strong>Novasell</strong><br>ネオングリーン / Zen Kaku Gothic<br><img src="design-md/novasell/preview-screenshot.png" width="220"></td>
 <td align="center"><strong>WIRED.jp</strong><br>モノトーン / WiredMono<br><img src="design-md/wired/preview-screenshot.png" width="220"></td>
-<td></td>
 </tr>
 </table>
 
@@ -91,8 +92,8 @@ Use [`template/DESIGN.md`](template/DESIGN.md) to create your own Japanese DESIG
 </tr>
 <tr>
 <td align="center"><strong>note</strong><br>クールグレー / 明朝体オプション<br><img src="design-md/note/preview-screenshot.png" width="220"></td>
+<td align="center"><strong>Novasell</strong><br>ネオングリーン / Zen Kaku Gothic<br><img src="design-md/novasell/preview-screenshot.png" width="220"></td>
 <td align="center"><strong>WIRED.jp</strong><br>モノトーン / WiredMono<br><img src="design-md/wired/preview-screenshot.png" width="220"></td>
-<td></td>
 </tr>
 </table>
 
