@@ -1,5 +1,7 @@
 node_modules/
-scripts/*.json
+scripts/
+package.json
+package-lock.json
 .claude/
 CLAUDE.md
 .DS_Store

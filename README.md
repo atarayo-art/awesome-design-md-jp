@@ -116,17 +116,6 @@ Use [`template/DESIGN.md`](template/DESIGN.md) to create your own Japanese DESIG
 8. **Responsive Behavior** — レスポンシブ挙動
 9. **Agent Prompt Guide** — エージェント向けプロンプトガイド
 
-### トークン抽出ツール
-
-`scripts/extract-tokens.mjs` で、任意のサイトからデザイントークンを自動抽出できます。
-
-```bash
-npm install
-npm run extract -- --out results.json https://example.com/
-```
-
-詳細は [CONTRIBUTING.md](CONTRIBUTING.md) を参照してください。
-
 ### コントリビュート
 
 日本語サービスの DESIGN.md 追加を歓迎します。[CONTRIBUTING.md](CONTRIBUTING.md) を参照してください。
