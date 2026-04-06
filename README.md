@@ -32,6 +32,7 @@ Without these specifications, AI agents produce Japanese UI with broken typograp
 | [SmartHR](https://smarthr.jp/) | HR SaaS | [design-md/smarthr/DESIGN.md](design-md/smarthr/DESIGN.md) |
 | [freee](https://www.freee.co.jp/) | Fintech SaaS | [design-md/freee/DESIGN.md](design-md/freee/DESIGN.md) |
 | [note](https://note.com/) | Media Platform | [design-md/note/DESIGN.md](design-md/note/DESIGN.md) |
+| [WIRED.jp](https://wired.jp/) | Tech Media | [design-md/wired/DESIGN.md](design-md/wired/DESIGN.md) |
 
 ### Template
 
