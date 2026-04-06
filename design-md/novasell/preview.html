@@ -6,7 +6,7 @@
 <title>Design System Preview: Novasell (Light)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@700&family=Roboto:wght@400;800&display=swap" rel="stylesheet">
 <style>
   :root {
     /* === Colors: CSS Custom Properties 実測値 === */
@@ -24,8 +24,8 @@
     --novasell-green-for-button-text-link: #00aa14;
     /* === Fonts === */
     --font-jp: "Zen Kaku Gothic New", sans-serif;
-    --font-display: "Playfair Display", "DM Serif Display", Georgia, serif;  /* gazzetta-variable 代替（モダンセリフ） */
-    --font-label: "Helvetica Neue", Helvetica, Arial, sans-serif;           /* neue-haas-grotesk-display 代替 */
+    --font-display: "Roboto", "Helvetica Neue", Arial, sans-serif;            /* gazzetta-variable 代替（ExtraBold 800 で近い雰囲気） */
+    --font-label: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; /* neue-haas-grotesk-display 代替 */
     /* === Animation === */
     --ease-01: cubic-bezier(0.32, 0.48, 0, 1);
   }
@@ -68,7 +68,7 @@
     padding: 120px 32px 100px; text-align: center; position: relative; overflow: hidden;
   }
   .hero-bg-text {
-    font-family: var(--font-display); font-size: 260px; font-weight: 700;
+    font-family: var(--font-display); font-size: 260px; font-weight: 800;
     line-height: 0.5; letter-spacing: -5px; color: rgba(0, 250, 39, 0.08);
     position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
     white-space: nowrap; pointer-events: none; user-select: none;
