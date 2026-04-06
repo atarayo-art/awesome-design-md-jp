@@ -126,6 +126,14 @@ Use [`template/DESIGN.md`](template/DESIGN.md) to create your own Japanese DESIG
 
 ---
 
+## Credits
+
+Inspired by [VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md). The 9-section DESIGN.md format and preview.html concept originate from that project.
+
+## Disclaimer
+
+The DESIGN.md files in this repository are **not official design system documentation** from the respective companies. All design token values are extracted from publicly available CSS on each service's website using browser computed styles. Service names and trademarks belong to their respective owners.
+
 ## License
 
 [MIT](LICENSE)
