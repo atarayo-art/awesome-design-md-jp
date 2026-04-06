@@ -36,11 +36,10 @@
 
 ### Neutral（ニュートラル）
 
-- **Text Primary** (`#323232`): 本文テキスト、見出し
-- **Text Secondary** (`#595959`): 補足テキスト（コーポレートサイト）
-- **Text Muted** (`#6e6b6b`): 薄いテキスト
-- **Text Tertiary** (`#8c8989`): 第三階層テキスト、アイコン
-- **Darkest** (`#1e1e1e`): 最も暗いニュートラル
+- **Text Primary** (`#323232`): 見出し、本文テキスト
+- **Text Body** (`#595959`): body デフォルトテキスト色（実測: `rgb(89,89,89)`）
+- **Text Muted** (`#8c8989`): プレースホルダー、ラベル（実測: `rgb(140,137,137)`）
+- **Heading Blue** (`#1e46aa`): h3 見出し、キャプション強調（Primary Dark）
 
 ### Surface & Borders
 
@@ -110,17 +109,23 @@ font-family: "Noto Sans", "Noto Sans JP", sans-serif;
 | Caption | FontSize0750 | 0.75rem (12px) | 400 | 1.5 | 0 | キャプション |
 | Smallest | FontSize0625 | 0.625rem (10px) | 400 | 1.5 | 0 | アイコンラベル |
 
-**コーポレートサイト**
+**コーポレートサイト** — computed style 実測値（2026-04-06）
 
-| Role | Size | Weight | Line Height | Letter Spacing | 備考 |
-|------|------|--------|-------------|----------------|------|
-| H1 | 44px | 700 | 1.2 | 0.05em | ヒーロー見出し |
-| H2 | 40px | 700 | 1.2 | 0.04em | セクション見出し |
-| H3 | 34px | 700 | 1.25 | 0.04em | サブ見出し |
-| H4 | 24px | 700 | 1.3 | 0 | 小見出し |
-| Body | 16px | 400 | 1.5 | 0 | 本文 |
-| Small | 14px | 400 | 1.5 | 0 | 補足テキスト |
-| XSmall | 12px | 400 | 1.5 | 0 | 注釈 |
+| Role | Size | Weight | Line Height | Letter Spacing | Color | 備考 |
+|------|------|--------|-------------|----------------|-------|------|
+| H2 (hero) | 40px | 500 | 60px (×1.5) | 1.6px (0.04em) | `#323232` | ヒーローセクション見出し |
+| H2 | 34px | 500 / 700 | 51px (×1.5) | 1.36px (0.04em) | `#323232` | セクション見出し |
+| H2 (blue) | 24px | 500 | 36px (×1.5) | normal | `#2864f0` | ブルー見出し |
+| H3 | 24px | 500 / 700 | 36px (×1.5) | normal | `#1e46aa` | サブ見出し（Primary Dark） |
+| Body (p) | 16px | 400 | 24px (×1.5) | normal | `#323232` | 本文 |
+| Body (secondary) | 16px | 400 | 24px (×1.5) | normal | `#595959` | 補足本文 |
+| Label (p) | 18px | 700 | 27px (×1.5) | normal | `#2864f0` | ラベル強調 |
+| Caption (p) | 12px | 700 | 18px (×1.5) | normal | `#1e46aa` | 小さい強調テキスト |
+| Nav Link | 14px | 400 | 21px (×1.5) | normal | `#323232` | ヘッダーナビ |
+| Footer Link | 13px | 400 | 19.5px (×1.5) | normal | `#595959` | フッターリンク |
+
+> 注: 見出しの weight は **500**（medium）が多く、700（bold）は一部の強調見出しのみ。
+> WebFetch で取得した値（700）とは異なる結果。
 
 ### 3.5 行間・字間
 
@@ -161,37 +166,39 @@ overflow-wrap: break-word;
 
 ## 4. Component Stylings
 
-### Buttons
+### Buttons — computed style 実測値
 
-**Primary**
+> Vibes のトークン値（pill 型 `99rem`）と**コーポレートサイトの実測値が異なる**ことに注意
+
+**Primary（コーポレートサイト）**
 - Background: `#2864f0`
-- Text: `#ffffff`
-- Border Radius: `99rem`（pill 型。Vibes の Full トークン）
-- Font Size: 0.875rem (14px)
-- Height (default): 2.25rem (36px)
-- Height (small): 1.5rem (24px)
-- Height (large): 3rem (48px)
+- Text: `#fff`
+- Border: 2px solid `#2864f0`
+- Border Radius: **8px**（Vibes の `99rem` ではない）
+- Font Size: 16px
+- Font Weight: 500 / 700（文脈で異なる）
 
-**Secondary**
-- Background: `transparent`
+**Secondary（ヘッダー）**
+- Background: `#fff`
 - Text: `#2864f0`
 - Border: 1px solid `#2864f0`
-- Border Radius: `99rem`
+- Border Radius: **5px**
+- Font Size: 14px
+- Font Weight: 700
 
 **Danger**
 - Background: `#dc1e32`
-- Text: `#ffffff`
-- Border Radius: `99rem`
+- Text: `#fff`
+- Border Radius: 8px
 
-### Inputs
+### Inputs — computed style 実測値
 
-- Background: `#ffffff`
-- Border: 1px solid `#e1dcdc`
-- Border (focus): 2px solid `#2864f0`
-- Border Radius: 0.5rem (8px)
-- Font Size: 0.875rem (14px)
-- Height: 2.25rem (36px)
-- Padding: 8px 12px
+- Background: `#fff`
+- Border: 1px solid `#cccccc`（DESIGN.md の `#e1dcdc` とは異なる）
+- Border Radius: **4px**（DESIGN.md の 8px とは異なる）
+- Font Size: 16px
+- Font Weight: 400
+- Placeholder: weight 300, color `#8c8989`
 
 ### Cards
 
@@ -250,7 +257,8 @@ overflow-wrap: break-word;
 
 - プロダクトUIとコーポレートサイトでフォント戦略が異なることを認識する
 - プロダクトUIにはシステムフォントスタック（Vibes）を使い、Webフォントの読み込みを避ける
-- ボタンはピル型（`border-radius: 99rem`）を標準とする
+- コーポレートサイトのボタンは `border-radius: 8px`。Vibes のピル型（`99rem`）はプロダクトUI用
+- 見出しの weight は `500`（medium）を基本とし、強調時のみ `700` を使う
 - スペーシングは 4px の倍数に揃える（Vibes の spacing scale に準拠）
 - 色のコントラスト比は WCAG AA 以上を確保する
 
@@ -260,7 +268,8 @@ overflow-wrap: break-word;
 - プロダクトUIで `border-radius` を角型（0px）にしない。Vibes のラジアススケールに従う
 - テキスト色に純粋な `#000000` を使わない。`#323232` を使用する
 - ブランドブルー `#2864f0` の上に暗い色のテキストを置かない（コントラスト不足）
-- コーポレートサイトの見出しで `letter-spacing: 0` にしない。`0.04em` 以上を使う
+- コーポレートサイトの大見出し（34px以上）では `letter-spacing: 0.04em` を使う。24px以下の見出しは `normal`
+- body のデフォルトテキスト色は `#595959` であり `#323232` ではない（`#323232` は見出し・本文強調用）
 
 ---
 
@@ -292,11 +301,13 @@ overflow-wrap: break-word;
 
 ```
 Primary Color: #2864f0
-Text Color: #323232
-Text Secondary: #595959
-Background: #f7f5f5
+Heading Blue: #1e46aa
+Text Heading: #323232
+Text Body (default): #595959
+Background: transparent (白ページ上)
 Surface: #ffffff
 Border: #e9e7e7
+Input Border: #cccccc（実測値）
 Danger: #dc1e32
 Success: #00963c
 
@@ -307,20 +318,23 @@ Website Font: "Noto Sans JP", sans-serif
 
 Body Size (Product): 14px
 Body Size (Website): 16px
-Line Height: 1.5
-Button Radius: 99rem (pill)
+Line Height: 1.5（全体統一）
+Heading Weight: 500（medium）、強調時 700
+Button Radius (Website): 8px
+Button Radius (Product): 99rem (pill)
+Input Radius: 4px
 ```
 
 ### プロンプト例
 
 ```
-freee のデザインシステム（Vibes）に従って、請求書一覧画面を作成してください。
-- フォント: '-apple-system', BlinkMacSystemFont, 'Helvetica Neue',
-    'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', Arial,
-    'メイリオ', Meiryo, sans-serif
-- テキスト色: #323232
-- プライマリボタン: 背景 #2864f0、テキスト #ffffff、角丸 99rem（ピル型）
-- 入力欄: ボーダー #e1dcdc、角丸 8px、高さ 36px
-- カード: 角丸 12px、シャドウ 0 0 1rem rgba(0,0,0,0.1)
+freee のコーポレートサイト風に、請求書一覧画面を作成してください。
+- フォント: "Noto Sans JP", sans-serif
+- テキスト色: #595959（body）、#323232（見出し・強調）
+- 見出し: weight 500、大見出し（34px以上）は letter-spacing: 0.04em
+- h3 等のサブ見出し: #1e46aa（ブルー）
+- プライマリボタン: 背景 #2864f0、テキスト #fff、角丸 8px、border: 2px solid #2864f0
+- 入力欄: ボーダー #cccccc、角丸 4px
+- カード: 角丸 16px
 - スペーシング: 4px の倍数
 ```
