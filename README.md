@@ -33,6 +33,7 @@ Without these specifications, AI agents produce Japanese UI with broken typograp
 
 | Service | Category | DESIGN.md | Preview |
 |---------|----------|-----------|---------|
+| [Apple Japan](https://www.apple.com/jp/) | Consumer Tech | [DESIGN.md](design-md/apple/DESIGN.md) | [preview.html](design-md/apple/preview.html) |
 | [SmartHR](https://smarthr.jp/) | HR SaaS | [DESIGN.md](design-md/smarthr/DESIGN.md) | [preview.html](design-md/smarthr/preview.html) |
 | [freee](https://www.freee.co.jp/) | Fintech SaaS | [DESIGN.md](design-md/freee/DESIGN.md) | [preview.html](design-md/freee/preview.html) |
 | [note](https://note.com/) | Media Platform | [DESIGN.md](design-md/note/DESIGN.md) | [preview.html](design-md/note/preview.html) |
@@ -42,12 +43,14 @@ Without these specifications, AI agents produce Japanese UI with broken typograp
 
 <table>
 <tr>
-<td align="center"><strong>SmartHR</strong><br>ウォームグレー / 游ゴシック<br><img src="design-md/smarthr/preview-screenshot.png" width="240"></td>
-<td align="center"><strong>freee</strong><br>ブルー基調 / Noto Sans JP<br><img src="design-md/freee/preview-screenshot.png" width="240"></td>
+<td align="center"><strong>Apple Japan</strong><br>SF Pro JP / ピル型ボタン<br><img src="design-md/apple/preview-screenshot.png" width="220"></td>
+<td align="center"><strong>SmartHR</strong><br>ウォームグレー / 游ゴシック<br><img src="design-md/smarthr/preview-screenshot.png" width="220"></td>
+<td align="center"><strong>freee</strong><br>ブルー基調 / Noto Sans JP<br><img src="design-md/freee/preview-screenshot.png" width="220"></td>
 </tr>
 <tr>
-<td align="center"><strong>note</strong><br>クールグレー / 明朝体オプション<br><img src="design-md/note/preview-screenshot.png" width="240"></td>
-<td align="center"><strong>WIRED.jp</strong><br>モノトーン / WiredMono<br><img src="design-md/wired/preview-screenshot.png" width="240"></td>
+<td align="center"><strong>note</strong><br>クールグレー / 明朝体オプション<br><img src="design-md/note/preview-screenshot.png" width="220"></td>
+<td align="center"><strong>WIRED.jp</strong><br>モノトーン / WiredMono<br><img src="design-md/wired/preview-screenshot.png" width="220"></td>
+<td></td>
 </tr>
 </table>
 
@@ -82,12 +85,14 @@ Use [`template/DESIGN.md`](template/DESIGN.md) to create your own Japanese DESIG
 
 <table>
 <tr>
-<td align="center"><strong>SmartHR</strong><br>ウォームグレー / 游ゴシック<br><img src="design-md/smarthr/preview-screenshot.png" width="240"></td>
-<td align="center"><strong>freee</strong><br>ブルー基調 / Noto Sans JP<br><img src="design-md/freee/preview-screenshot.png" width="240"></td>
+<td align="center"><strong>Apple Japan</strong><br>SF Pro JP / ピル型ボタン<br><img src="design-md/apple/preview-screenshot.png" width="220"></td>
+<td align="center"><strong>SmartHR</strong><br>ウォームグレー / 游ゴシック<br><img src="design-md/smarthr/preview-screenshot.png" width="220"></td>
+<td align="center"><strong>freee</strong><br>ブルー基調 / Noto Sans JP<br><img src="design-md/freee/preview-screenshot.png" width="220"></td>
 </tr>
 <tr>
-<td align="center"><strong>note</strong><br>クールグレー / 明朝体オプション<br><img src="design-md/note/preview-screenshot.png" width="240"></td>
-<td align="center"><strong>WIRED.jp</strong><br>モノトーン / WiredMono<br><img src="design-md/wired/preview-screenshot.png" width="240"></td>
+<td align="center"><strong>note</strong><br>クールグレー / 明朝体オプション<br><img src="design-md/note/preview-screenshot.png" width="220"></td>
+<td align="center"><strong>WIRED.jp</strong><br>モノトーン / WiredMono<br><img src="design-md/wired/preview-screenshot.png" width="220"></td>
+<td></td>
 </tr>
 </table>
 
