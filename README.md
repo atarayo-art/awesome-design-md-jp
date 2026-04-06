@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="designmd-jp.jpg" alt="Awesome Design MD JP" width="100%">
+</p>
+
 # Awesome Design MD JP
 
 > A curated collection of `DESIGN.md` files for Japanese web services — enabling AI agents to generate accurate Japanese UI with proper typography, font stacks, and typographic rules.
